@@ -1,0 +1,576 @@
+/* Locally hosted Open Sans; handwritten callouts retain their existing font. */
+@font-face{font-family:"Open Sans";font-style:normal;font-weight:300 800;font-stretch:100%;font-display:swap;src:url("open-sans-variable.ttf") format("truetype")}
+/* PawMedal additions only. Impact's header, drawers, product forms and checkout remain native. */
+.pawmedal{--pawmedal-ink:#111;--pawmedal-gold:#c69746;color:var(--pawmedal-ink);background:var(--pawmedal-surface,#fff);font-family:"Open Sans",Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65;box-sizing:border-box}.pawmedal *{box-sizing:border-box}.pawmedal img{display:block;max-width:100%;height:auto;object-fit:contain}.pawmedal h1,.pawmedal h2,.pawmedal h3,.pawmedal p{margin:0}.pawmedal h1,.pawmedal h2,.pawmedal h3{color:inherit;font-family:"Open Sans",Arial,Helvetica,sans-serif;font-weight:600;letter-spacing:-.055em;line-height:1.1;text-transform:none}.pawmedal h1{font-size:clamp(44px,4.8vw,72px);max-width:650px}.pawmedal h2{font-size:clamp(32px,3.3vw,49px)}.pawmedal h3{font-size:23px;letter-spacing:-.035em}.pawmedal p{color:#626262}.pawmedal a{color:inherit;text-decoration:none}.pawmedal button{font:inherit;cursor:pointer}.pawmedal [hidden]{display:none!important}.pawmedal-wrap{width:min(1280px,calc(100% - 96px));margin:auto}.pawmedal-section{padding:var(--pawmedal-space,80px) 0}.pawmedal-warm{background:var(--pawmedal-surface,#f7f4ee)}.pawmedal-eyebrow{font-size:11px!important;font-weight:700;letter-spacing:.16em;color:#65502c!important;margin-bottom:22px!important;line-height:1.6}.pawmedal-heading{max-width:730px;margin-bottom:40px}.pawmedal-heading>p:last-child:not(:first-child){margin-top:22px;max-width:560px}.pawmedal-heading h2{max-width:740px}.pawmedal-button{display:inline-flex;align-items:center;justify-content:space-between;gap:26px;background:#111;color:#fff!important;border:1px solid #111;border-radius:6px;padding:14px 22px;min-height:52px;line-height:1.4;font-size:14px;font-weight:600;transition:background .18s,transform .18s}.pawmedal-button:hover{background:#35312a;transform:translateY(-2px)}.pawmedal-button span{font-size:19px}.pawmedal-text-link,.pawmedal-text-button{display:inline-flex;gap:10px;align-items:center;min-height:48px;font-size:14px;font-weight:600;border:none;background:transparent;padding:0}.pawmedal-actions{display:flex;gap:28px;align-items:center;flex-wrap:wrap;margin-top:32px}.pawmedal-play{border:1px solid #d1cbc2;border-radius:50%;width:38px;height:38px;text-align:center;line-height:36px}.pawmedal :focus-visible{outline:3px solid #9b702b;outline-offset:5px}.pawmedal [id],section[id]{scroll-margin-top:95px}.pawmedal-hero{padding:32px 0 48px}.pawmedal-hero-grid{display:grid;grid-template-columns:1.03fr 1fr;gap:58px;align-items:center}.pawmedal-lead{max-width:480px;margin-top:28px!important;font-size:16px}.pawmedal-hero-note{font-size:12px;color:#626262;margin-top:37px;display:flex;gap:12px;align-items:center}.pawmedal-hero-note span{font-size:25px;color:#95703a}.pawmedal-hero-art{position:relative;isolation:isolate;background:#e9e2d8;border-radius:110px 12px 12px 12px;overflow:hidden;min-height:585px;display:flex;align-items:center}.pawmedal-hero-product{width:100%;mix-blend-mode:normal}.pawmedal-art-caption,.pawmedal-art-bottom{position:absolute;left:34px;right:30px;display:flex;justify-content:space-between;align-items:center;font-size:9px;letter-spacing:.16em;font-weight:700;z-index:1}.pawmedal-art-caption{top:32px}.pawmedal-art-bottom{bottom:25px}.pawmedal-art-bottom a{height:44px;width:44px;border:1px solid #a19789;border-radius:50%;text-align:center;line-height:42px;font-size:20px}.pawmedal-art-note{position:absolute;right:21px;top:25%;font-family:Georgia,serif;font-style:italic;font-size:20px;line-height:1.25;transform:rotate(7deg);width:120px}.pawmedal-benefits{border-top:1px solid #e6e0d7;border-bottom:1px solid #e6e0d7;padding:29px 0}.pawmedal-benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}.pawmedal-benefit{display:flex;gap:15px;align-items:center}.pawmedal-benefit-icon{font-size:31px;font-family:Georgia,serif;width:35px;flex-shrink:0;color:#876532}.pawmedal-benefit h3{font-size:15px;letter-spacing:-.02em;margin-bottom:4px}.pawmedal-benefit p{font-size:12px}.pawmedal-context{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:60px}.pawmedal-context h2{font-size:33px;max-width:360px}.pawmedal-context article{border-left:1px solid #e6e0d7;padding-left:36px}.pawmedal-context-number{font-size:42px;color:#ac8548;line-height:1}.pawmedal-context h3{font-size:19px;margin:20px 0 12px}.pawmedal-context p{font-size:14px}.pawmedal-product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.pawmedal-product-card{background:#fff;border:1px solid #e6e0d7;border-radius:13px;overflow:hidden;display:flex;flex-direction:column}.pawmedal-card-image{position:relative;background:#eee8e3;height:315px;overflow:hidden}.pawmedal-card-image>img{width:100%;height:100%;object-fit:contain}.pawmedal-card-label{position:absolute;top:15px;left:18px;letter-spacing:.12em;font-size:9px;font-weight:bold;background:#ffffffdf;border-radius:3px;padding:5px 9px}.pawmedal-card-image:has(.pawmedal-bundle-finder)>img:first-child{width:70%;padding:26px 0}.pawmedal-card-image .pawmedal-bundle-finder{position:absolute;right:9px;bottom:32px;width:43%;height:65%;border-radius:70px 70px 12px 12px}.pawmedal-card-copy{padding:28px;display:flex;flex-direction:column;flex:1}.pawmedal-card-copy>p{font-size:13px;margin-top:9px}.pawmedal-card-copy ul{padding:0;list-style:none;font-size:13px;margin:24px 0}.pawmedal-card-copy li{padding:6px 0}.pawmedal-card-copy li:before{content:'✓';color:#876532;margin-right:10px}.pawmedal-price{margin-top:auto;margin-bottom:20px;font-size:23px;font-weight:600}.pawmedal-muted{font-size:11px;font-weight:400;color:#626262}.pawmedal-card-copy .pawmedal-button{width:100%}.pawmedal-split{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.pawmedal-profile-stage{position:relative;min-height:655px;background:#edf0e9;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:38px 30px 55px}.pawmedal-phone{width:254px;border:7px solid #202421;border-radius:37px;overflow:hidden;box-shadow:18px 25px 45px #2934262b;background:#fff;transform:rotate(-3deg)}.pawmedal-phone img{width:100%;height:auto}.pawmedal-vertical-label{position:absolute;left:20px;top:40px;writing-mode:vertical-rl;font-size:9px;letter-spacing:.2em}.pawmedal-sample{position:absolute;bottom:17px;font-size:10px;color:#555}.pawmedal-steps{list-style:none;margin:0;padding:0}.pawmedal-steps li{display:flex;gap:20px;margin:26px 0}.pawmedal-steps li>span{border:1px solid #e6e0d7;border-radius:50%;height:40px;width:40px;flex:0 0 40px;text-align:center;line-height:38px;font-size:12px;color:#846235}.pawmedal-steps h3{font-size:18px;margin-bottom:7px}.pawmedal-steps p{font-size:14px}.pawmedal-small{font-size:12px!important;line-height:1.7;margin-top:20px!important}.pawmedal-feature-list>div{display:flex;gap:20px;margin:26px 0}.pawmedal-feature-list>div>span{font-size:27px;color:#876532}.pawmedal-feature-list h3{font-size:18px;margin-bottom:8px}.pawmedal-feature-list p{font-size:14px}.pawmedal-feature-list~.pawmedal-button{margin-top:26px}.pawmedal-finder-stage{position:relative;isolation:isolate;min-height:570px;border:1px solid #ddd7cb;overflow:hidden;border-radius:120px 120px 12px 12px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#edece4}.pawmedal-finder-stage img{width:65%;max-height:370px;z-index:1;border-radius:100px 100px 30px 30px}.pawmedal-map-lines{position:absolute;inset:-80px;z-index:-1;transform:rotate(-25deg);background:repeating-linear-gradient(0deg,transparent 0 78px,#fff8 80px 89px,transparent 91px 160px),repeating-linear-gradient(90deg,transparent 0 115px,#fff8 117px 125px,transparent 127px 220px)}.pawmedal-map-label{font-size:9px;letter-spacing:.16em;margin-top:30px}.pawmedal-finder-stage small{font-size:10px;margin-top:12px;color:#626262}.pawmedal-dark{background:var(--pawmedal-surface,#111);color:#fff}.pawmedal-dark p{color:#c0bdb6}.pawmedal-dark .pawmedal-eyebrow{color:#d2b27a!important}.pawmedal-dark .pawmedal-heading{max-width:750px}.pawmedal-construction-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:50px;align-items:center}.pawmedal-construction-grid img{width:100%;border-radius:12px}.pawmedal-materials article{position:relative;padding:22px 0 22px 50px;border-bottom:1px solid #3b3934}.pawmedal-materials article>span{position:absolute;left:0;color:#c69746;font-size:12px;top:23px}.pawmedal-materials h3{font-size:20px;margin-bottom:9px}.pawmedal-materials p{font-size:13px}.pawmedal-dark-bottom{display:flex;justify-content:space-between;gap:35px;align-items:center;margin-top:42px}.pawmedal-dark-bottom>p{font-size:11px;max-width:570px}.pawmedal-dark .pawmedal-button{background:#c69746;color:#111!important}.pawmedal-table-scroll{overflow-x:auto;border-top:1px solid #e6e0d7}.pawmedal-table{border-collapse:collapse;width:100%;min-width:750px;font-size:13px;text-align:left}.pawmedal-table caption{text-align:left;color:#626262;font-size:12px;padding:16px 0}.pawmedal-table th,.pawmedal-table td{padding:19px 22px;border-bottom:1px solid #e6e0d7;width:25%;vertical-align:middle}.pawmedal-table thead th{font-size:15px;letter-spacing:-.025em}.pawmedal-table tbody th{font-weight:500}.pawmedal-table td:nth-child(3),.pawmedal-table th:nth-child(3){background:#f7f4ee}.pawmedal-table td{color:#555}.pawmedal-scroll-hint{display:none;font-size:12px;margin-bottom:15px!important}.pawmedal-studio-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.pawmedal-studio-preview{position:relative;border-radius:12px;overflow:hidden;background:#e9e2d8}.pawmedal-studio-preview img{width:100%;aspect-ratio:1;object-fit:contain}.pawmedal-studio-caption{position:absolute;bottom:20px;left:20px;font-size:11px;background:#ffffffeb;padding:6px 12px;border-radius:4px}.pawmedal-studio-controls h3{font-size:26px;margin-bottom:20px}.pawmedal-swatches{display:flex;gap:14px}.pawmedal-swatch{background:#fff;border:1px solid #d8d1c4;border-radius:9px;padding:6px;width:123px;text-align:left}.pawmedal-swatch[aria-pressed=true]{outline:2px solid #95703a;outline-offset:3px}.pawmedal-swatch img{width:100%;height:100px;border-radius:4px;object-fit:contain}.pawmedal-swatch span{display:block;font-size:11px;padding:7px 4px}.pawmedal-create{border-top:1px solid #ddd4c5;margin-top:27px;padding-top:27px}.pawmedal-create>p{font-size:14px}.pawmedal-create .pawmedal-button{margin-top:20px}.pawmedal-service-note{font-size:12px!important;margin-top:17px!important;border-left:2px solid #c69746;padding-left:14px}.pawmedal-studio-benefits{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #e0d8ca;margin-top:44px;padding-top:25px;gap:20px;font-size:12px}.pawmedal-studio-benefits span:before{content:'✧';margin-right:9px;color:#876532}.pawmedal-reassurance{display:grid;grid-template-columns:1.2fr 1fr;background:#ece3d4;border-radius:12px;padding:60px;gap:70px;align-items:center}.pawmedal-reassurance h2{max-width:550px}.pawmedal-reassurance p:not(.pawmedal-eyebrow){margin:24px 0;max-width:490px;color:#534e45;font-size:15px}.pawmedal-reassurance-art{text-align:center}.pawmedal-reassurance-art>span{font-size:90px;line-height:1;color:#967543;font-family:Georgia,serif}.pawmedal-reassurance-art>p{font:italic 33px/1.25 Georgia,serif!important;color:#4b4130!important}.pawmedal-reassurance-art small{font-size:10px;color:#655b4b}.pawmedal-reassurance-art img{max-height:370px}.pawmedal-faq-grid{display:grid;grid-template-columns:.85fr 1.3fr;gap:90px}.pawmedal-faq{border-top:1px solid #e6e0d7}.pawmedal-faq:last-child{border-bottom:1px solid #e6e0d7}.pawmedal-faq summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;list-style:none;padding:23px 0;font-size:15px;font-weight:600;min-height:60px}.pawmedal-faq summary::-webkit-details-marker{display:none}.pawmedal-faq summary span{font-size:23px;font-weight:400;transition:transform .18s}.pawmedal-faq[open] summary span{transform:rotate(45deg)}.pawmedal-faq>div{color:#626262;font-size:14px;padding:0 34px 23px 0}.pawmedal-dialog{max-width:min(850px,90vw);border:none;border-radius:12px;padding:20px}.pawmedal-dialog::backdrop{background:#000b}.pawmedal-dialog video{display:block;width:100%;margin-top:16px}.pawmedal-unavailable{opacity:.65}
+/* The following shell is for the disconnected HTML review only. */
+.pawmedal-review-body{margin:0;background:#fff;font-family:"Open Sans",Arial,Helvetica,sans-serif}.pawmedal-review-bar{background:#111;color:#eee;text-align:center;padding:8px 20px;font-size:10px;letter-spacing:.07em}.pawmedal-review-header{height:100px;display:flex;align-items:center;justify-content:space-between;gap:30px}.pawmedal-review-logo{width:183px;height:auto;display:block}.pawmedal-review-nav{display:flex;align-items:center;gap:31px}.pawmedal-review-nav a{font-size:13px;text-decoration:none;color:#111;min-height:44px;display:flex;align-items:center}.pawmedal-review-header .pawmedal-button{font-size:12px;min-height:44px;padding:11px 17px}.pawmedal-menu-toggle{display:none;border:1px solid #ddd;background:#fff;border-radius:5px;min-width:44px;min-height:44px;font-size:22px}.pawmedal-review-footer{border-top:1px solid #e6e0d7;padding:40px 0 24px}.pawmedal-footer-top,.pawmedal-footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:25px}.pawmedal-footer-top p{font-size:12px}.pawmedal-footer-top nav{display:flex;gap:25px}.pawmedal-footer-top a{font-size:12px;min-height:44px;display:flex;align-items:center}.pawmedal-footer-bottom{border-top:1px solid #eee;margin-top:30px;padding-top:20px;font-size:10px;color:#626262}.pawmedal-skip{position:absolute;left:20px;top:-100px;background:#111;color:#fff;z-index:99;padding:14px}.pawmedal-skip:focus{top:10px}
+@media(min-width:1600px){.pawmedal-hero-art{min-height:630px}}@media(max-width:1100px){.pawmedal-wrap{width:calc(100% - 64px)}.pawmedal-hero-grid{gap:30px}.pawmedal-hero-art{min-height:470px}.pawmedal-art-note{font-size:17px;width:95px;right:12px}.pawmedal-split{gap:45px}.pawmedal-profile-stage{min-height:615px}.pawmedal-benefit-grid{gap:12px}.pawmedal-benefit{gap:8px}.pawmedal-benefit h3{font-size:13px}.pawmedal-benefit p{font-size:11px}.pawmedal-card-copy{padding:22px}.pawmedal-card-image{height:260px}.pawmedal-context{gap:30px}.pawmedal-context article{padding-left:25px}.pawmedal-context h2{font-size:29px}.pawmedal-reassurance{padding:40px;gap:35px}.pawmedal-faq-grid{gap:45px}.pawmedal-studio-grid{gap:40px}.pawmedal-review-nav{gap:19px}}
+@media(max-width:749px){.pawmedal-wrap{width:calc(100% - 40px)}.pawmedal-section{padding:min(var(--pawmedal-space,80px),52px) 0}.pawmedal-hero{padding:24px 0 30px}.pawmedal-hero-grid,.pawmedal-split,.pawmedal-studio-grid,.pawmedal-faq-grid{grid-template-columns:1fr;gap:34px}.pawmedal h1{font-size:48px;letter-spacing:-.055em;max-width:540px}.pawmedal h2{font-size:35px}.pawmedal-lead{font-size:15px;margin-top:22px!important}.pawmedal-eyebrow{font-size:10px!important;margin-bottom:17px!important}.pawmedal-actions{gap:20px;margin-top:25px}.pawmedal-button{padding:13px 17px;font-size:13px}.pawmedal-hero-note{margin-top:23px;font-size:11px}.pawmedal-hero-art{min-height:0;aspect-ratio:1/1.04;border-radius:70px 10px 10px 10px}.pawmedal-art-caption{left:25px;right:22px;top:25px;font-size:8px}.pawmedal-art-bottom{left:25px;right:22px;bottom:16px;font-size:8px}.pawmedal-art-note{font-size:17px;top:26%}.pawmedal-benefits{padding:25px 0}.pawmedal-benefit-grid{grid-template-columns:1fr 1fr;gap:23px 12px}.pawmedal-benefit-icon{width:25px;font-size:24px}.pawmedal-benefit h3{font-size:12px}.pawmedal-benefit p{font-size:10px}.pawmedal-context{grid-template-columns:1fr 1fr;gap:28px 20px}.pawmedal-context>div{grid-column:1/-1}.pawmedal-context h2{font-size:31px;max-width:480px}.pawmedal-context article{padding:0;border:none}.pawmedal-context-number{font-size:34px}.pawmedal-context h3{font-size:17px}.pawmedal-context p{font-size:12px}.pawmedal-heading{margin-bottom:29px}.pawmedal-heading>p:last-child:not(:first-child){font-size:14px;margin-top:20px}.pawmedal-product-grid{grid-template-columns:1fr;gap:22px}.pawmedal-card-image{height:320px}.pawmedal-card-copy{padding:24px}.pawmedal-card-copy h3{font-size:26px}.pawmedal-card-copy ul{display:flex;flex-wrap:wrap;gap:0 17px;margin:15px 0}.pawmedal-card-copy li{font-size:12px}.pawmedal-profile-stage{min-height:620px}.pawmedal-phone{width:242px}.pawmedal-profile-stage{order:2}.pawmedal-split>div:has(.pawmedal-steps){order:1}.pawmedal-steps li{margin:22px 0}.pawmedal-finder-stage{min-height:460px}.pawmedal-finder-stage img{max-height:310px}.pawmedal-construction-grid{grid-template-columns:1fr;gap:15px}.pawmedal-materials article{padding:20px 0 20px 40px}.pawmedal-dark-bottom{flex-direction:column;align-items:flex-start;gap:24px;margin-top:30px}.pawmedal-scroll-hint{display:block}.pawmedal-table th,.pawmedal-table td{padding:16px}.pawmedal-studio-benefits{grid-template-columns:1fr 1fr;font-size:11px;gap:15px;margin-top:30px}.pawmedal-reassurance{grid-template-columns:1fr;padding:30px 24px;gap:30px}.pawmedal-reassurance h2{font-size:34px}.pawmedal-reassurance-art>span{font-size:62px}.pawmedal-reassurance-art>p{margin:15px auto!important}.pawmedal-faq-grid{gap:0}.pawmedal-faq summary{font-size:14px}.pawmedal-review-bar{font-size:9px}.pawmedal-review-header{height:80px;gap:12px;position:relative}.pawmedal-review-logo{width:155px}.pawmedal-menu-toggle{display:block}.pawmedal-review-header>.pawmedal-button{display:none}.pawmedal-review-nav{display:none;position:absolute;top:73px;left:0;right:0;background:white;border:1px solid #e6e0d7;box-shadow:0 12px 20px #0001;padding:20px;z-index:20;flex-direction:column;align-items:stretch;gap:4px}.pawmedal-review-nav[data-open=true]{display:flex}.pawmedal-footer-top{align-items:flex-start;flex-direction:column}.pawmedal-footer-bottom{align-items:flex-start;flex-direction:column;gap:8px}.pawmedal-footer-top nav{flex-wrap:wrap}.pawmedal-small{font-size:11px!important}}
+@media(prefers-reduced-motion:reduce){.pawmedal *, .pawmedal *:before{transition:none!important;scroll-behavior:auto!important;animation:none!important}}
+
+/* Wireframe-matched hero refresh. */
+.pawmedal-button,.pawmedal-text-link,.pawmedal-text-button{border-radius:100px}
+.pawmedal-hero{position:relative;min-height:610px;padding:0;overflow:hidden;background:#f6f6f2}
+.pawmedal-hero-media{position:absolute;inset:0;z-index:0}
+.pawmedal-hero-media picture,.pawmedal-hero-media img{width:100%;height:100%;display:block}
+.pawmedal-hero-photo{object-fit:cover;object-position:center right}
+.pawmedal-hero:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#ffffff 0%,#fffffff2 23%,#ffffffb5 43%,#ffffff1a 67%,#ffffff00 100%)}
+.pawmedal-hero-grid{position:relative;z-index:2;min-height:610px;display:grid;grid-template-columns:minmax(620px,830px) 1fr;gap:30px;align-items:center}
+.pawmedal-hero-copy{padding:110px 0 100px}
+.pawmedal-hero .pawmedal-eyebrow{margin-bottom:14px!important;color:#111!important;letter-spacing:0;font-size:14px!important}
+.pawmedal-hero h1{font-size:clamp(60px,5vw,86px);line-height:.96;max-width:850px;font-weight:800;letter-spacing:-.045em}
+.pawmedal-hero h1 span{display:block}
+.pawmedal-hero .pawmedal-lead{font-size:20px;line-height:1.26;color:#111;max-width:570px;margin-top:22px!important}
+.pawmedal-hero .pawmedal-actions{gap:20px;margin-top:30px}
+.pawmedal-hero .pawmedal-button,.pawmedal-hero .pawmedal-text-link,.pawmedal-hero .pawmedal-text-button{display:inline-flex;align-items:center;justify-content:center;width:205px;height:58px;min-height:58px;border-radius:100px;font-size:14px;font-weight:700;box-sizing:border-box;text-decoration:none;cursor:pointer;transition:transform .18s,border-color .18s,box-shadow .18s,background .18s}
+.pawmedal-hero .pawmedal-button{gap:12px;background:#111;color:#fff!important;border:1px solid #111;box-shadow:0 12px 25px #00000026;padding:0 20px}
+.pawmedal-hero .pawmedal-button:hover{background:#2b2824;transform:translateY(-2px);box-shadow:0 15px 30px #00000033}
+.pawmedal-hero .pawmedal-button span{font-size:18px;line-height:1}
+.pawmedal-hero .pawmedal-text-link,.pawmedal-hero .pawmedal-text-button{gap:12px;border:1px solid #ddd;background:#fff;color:#111!important;box-shadow:0 12px 25px #00000014;padding:0 20px}
+.pawmedal-hero .pawmedal-text-link:hover,.pawmedal-hero .pawmedal-text-button:hover{background:#fff;border-color:#aaa;transform:translateY(-2px);box-shadow:0 15px 30px #0000001f}
+.pawmedal-hero .pawmedal-play{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:transparent;border:none;color:#111;padding:0;line-height:1;flex-shrink:0}
+.pawmedal-hero .pawmedal-play svg,.pawmedal-play-icon{width:100%;height:100%;display:block;fill:currentColor}
+.pawmedal-hero-art{position:relative;min-height:0;background:transparent;border-radius:0;overflow:visible;align-self:stretch;display:block}
+.pawmedal-art-note{position:absolute;right:2%;top:42%;width:190px;color:#fff;font-family:Georgia,serif;font-size:30px;line-height:1.03;font-style:italic;transform:rotate(-9deg);text-align:center;text-shadow:0 2px 18px #000000a8}
+.pawmedal-benefits{position:relative;z-index:3;margin-top:-83px;background:#fff;border-top:1px solid #ececec;border-bottom:1px solid #ececec;padding:23px 0;box-shadow:0 -12px 30px #00000008}
+.pawmedal-benefit-grid{gap:0}
+.pawmedal-benefit{padding:0 18px;border-right:1px solid #eee;gap:14px}
+.pawmedal-benefit:last-child{border-right:none}
+.pawmedal-benefit-icon{font-size:34px;width:44px;color:#111;line-height:1;text-align:center}
+.pawmedal-benefit h3{font-size:17px;font-weight:800;line-height:1.15}
+.pawmedal-benefit p{font-size:16px;line-height:1.25;color:#111}
+.pawmedal-review-body{background:#fff}
+.pawmedal-review-bar{display:none}
+.pawmedal-review-header{position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:10;height:70px;width:min(1160px,calc(100% - 48px));padding:0 24px;background:#fffffff2;border-radius:0 0 12px 12px;box-shadow:0 10px 35px #00000014}
+.pawmedal-review-logo{width:166px}
+.pawmedal-review-nav a{font-size:14px;font-weight:800}
+.pawmedal-review-header>.pawmedal-button{display:none}
+.pawmedal-review-header:after{display:none}
+.pawmedal-review-tools{display:flex;align-items:center;gap:24px;margin-left:auto;color:#111}
+.pawmedal-review-tools>span{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;font-size:18px;line-height:1}
+.pawmedal-lang{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;background:transparent;color:#111;min-height:28px;padding:0;font:700 13px/1 "Open Sans",Arial,Helvetica,sans-serif;cursor:pointer}
+.pawmedal-lang-text{letter-spacing:.08em;display:inline-flex;align-items:center;line-height:1}
+.pawmedal-lang-arrow{display:inline-flex;align-items:center;justify-content:center;width:9px;height:6px;line-height:1;margin-top:1px}
+.pawmedal-dropdown-icon{width:9px;height:auto;display:block;fill:currentColor}
+.pawmedal-review-footer .pawmedal-button{border-radius:100px}
+.pawmedal-missing{background:#fff;padding:46px 0}
+.pawmedal-missing-grid{display:grid;grid-template-columns:1.1fr .85fr .85fr;gap:14px}
+.pawmedal-missing-card{min-height:168px;border:1px solid #e9e9e9;border-radius:8px;background:linear-gradient(135deg,#fbfbfb 0%,#f3f3f3 100%);box-shadow:0 12px 30px #00000008;padding:24px 26px;display:flex;flex-direction:column;justify-content:center}
+.pawmedal-missing-copy h2{font-size:31px;line-height:.98;font-weight:800;letter-spacing:-.04em;max-width:360px}
+.pawmedal-missing-copy p{font-size:16px;line-height:1.28;color:#111;margin-top:14px;max-width:420px}
+.pawmedal-missing-stat{align-items:center;text-align:center}
+.pawmedal-missing-stat>span,.pawmedal-stat-icon{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;font-size:34px;line-height:1;color:#111;margin-bottom:13px}
+.pawmedal-stat-svg{width:100%;height:100%;max-width:36px;max-height:36px;display:block;fill:currentColor}
+.pawmedal-missing-stat h3{font-size:27px;line-height:1;font-weight:800;letter-spacing:-.03em;margin:0 0 8px}
+.pawmedal-missing-stat p{font-size:18px;line-height:1.2;color:#111;max-width:260px}
+.pawmedal-missing-stat a{font-size:11px;margin-top:10px;color:#75592d;text-decoration:underline}
+@media(max-width:1100px){
+  .pawmedal-hero{min-height:560px}
+  .pawmedal-hero-grid{min-height:560px;grid-template-columns:minmax(520px,680px) 1fr}
+  .pawmedal-hero-copy{padding:105px 0 105px}
+  .pawmedal-hero h1{font-size:62px;max-width:700px}
+  .pawmedal-hero .pawmedal-lead{font-size:18px;max-width:510px}
+  .pawmedal-art-note{right:0;top:45%;font-size:24px;width:145px}
+  .pawmedal-benefit{padding:0 16px}
+  .pawmedal-benefit-icon{font-size:36px;width:46px}
+  .pawmedal-benefit h3{font-size:14px}
+  .pawmedal-benefit p{font-size:13px}
+  .pawmedal-benefits{margin-top:-85px}
+  .pawmedal-missing-grid{grid-template-columns:1fr 1fr 1fr}
+  .pawmedal-missing-card{padding:22px 18px}
+  .pawmedal-missing-copy h2{font-size:26px}
+  .pawmedal-missing-stat h3{font-size:24px}
+  .pawmedal-missing-stat p{font-size:15px}
+}
+@media(max-width:749px){
+  .pawmedal-review-header{position:absolute;top:0;height:58px;width:calc(100% - 20px);padding:0 12px;border-radius:0 0 10px 10px}
+  .pawmedal-review-logo{width:128px}
+  .pawmedal-review-tools{display:none}
+  .pawmedal-menu-toggle{border-radius:100px;background:#fff}
+  .pawmedal-review-nav{top:58px;border-radius:0 0 14px 14px}
+  .pawmedal-hero{min-height:520px;padding:0}
+  .pawmedal-hero:after{background:linear-gradient(180deg,#fffffff7 0%,#ffffffe8 34%,#ffffff70 54%,#ffffff00 100%)}
+  .pawmedal-hero-photo{object-position:72% center}
+  .pawmedal-hero-grid{min-height:520px;display:block}
+  .pawmedal-hero-copy{padding:88px 0 150px}
+  .pawmedal-hero h1{font-size:48px;line-height:.98;max-width:340px}
+  .pawmedal-hero .pawmedal-lead{font-size:16px;line-height:1.35;max-width:330px;margin-top:18px!important}
+  .pawmedal-hero .pawmedal-eyebrow{font-size:11px!important}
+  .pawmedal-hero .pawmedal-actions{gap:12px;margin-top:22px}
+  .pawmedal-hero .pawmedal-button,.pawmedal-hero .pawmedal-text-link,.pawmedal-hero .pawmedal-text-button{width:min(180px,calc(50% - 6px));height:50px;min-height:50px;padding:0 10px;font-size:12px}
+  .pawmedal-hero .pawmedal-play{width:22px;height:22px;line-height:1}
+  .pawmedal-art-note{display:none}
+  .pawmedal-benefits{margin-top:0;padding:18px 0}
+  .pawmedal-benefit-grid{grid-template-columns:1fr 1fr;gap:16px 0}
+  .pawmedal-benefit{padding:0 12px;border-right:none}
+  .pawmedal-benefit-icon{font-size:31px;width:38px}
+  .pawmedal-benefit h3{font-size:12px}
+  .pawmedal-benefit p{font-size:11px}
+  .pawmedal-missing{padding:32px 0}
+  .pawmedal-missing-grid{grid-template-columns:1fr;gap:10px}
+  .pawmedal-missing-card{min-height:134px;padding:22px}
+  .pawmedal-missing-copy h2{font-size:29px;max-width:310px}
+  .pawmedal-missing-copy p{font-size:14px}
+  .pawmedal-missing-stat h3{font-size:26px}
+  .pawmedal-missing-stat p{font-size:16px}
+}
+
+/* Requested Proxima Nova family and 10-15% lighter type scale. */
+@font-face{font-family:"Font Awesome 6 Brands";font-style:normal;font-weight:400;font-display:block;src:url("fa-brands-400.woff2") format("woff2")}
+@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:400;font-display:block;src:url("fa-regular-400.woff2") format("woff2")}
+@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:block;src:url("fa-solid-900.woff2") format("woff2")}
+.pawmedal .fa-brands,.pawmedal .fa-regular,.pawmedal .fa-sharp,.pawmedal .fa-solid{font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}
+.pawmedal .fa-brands{font-family:"Font Awesome 6 Brands";font-weight:400}
+.pawmedal .fa-regular,.pawmedal .fa-sharp{font-family:"Font Awesome 6 Free";font-weight:400}
+.pawmedal .fa-solid{font-family:"Font Awesome 6 Free";font-weight:900}
+.pawmedal .fa-apple:before{content:"\f179"}
+.pawmedal .fa-nfc,.pawmedal .fa-shield-check{font-family:"Font Awesome 6 Free";font-weight:900}
+.pawmedal .fa-nfc:before{content:"\f0e7"}
+.pawmedal .fa-shield-check:before{content:"\f3ed"}
+.pawmedal .fa-heart:before{content:"\f004"}
+.pawmedal .fa-magnifying-glass{font-family:"Font Awesome 6 Free";font-weight:900}
+.pawmedal .fa-magnifying-glass:before{content:"\f002"}
+.pawmedal .fa-user:before{content:"\f007"}
+.pawmedal .fa-cart-shopping{font-family:"Font Awesome 6 Free";font-weight:900}
+.pawmedal .fa-cart-shopping:before{content:"\f07a"}
+.pawmedal .fa-qrcode-read:before{content:"\f029"}
+.pawmedal .fa-circle-play:before{content:"\f144"}
+.pawmedal .fa-paw:before{content:"\f1b0"}
+.pawmedal,.pawmedal-review-body{font-family:"Open Sans",Arial,Helvetica,sans-serif;font-size:14px}
+.pawmedal h1,.pawmedal h2,.pawmedal h3{font-family:"Open Sans",Arial,Helvetica,sans-serif}
+.pawmedal button,.pawmedal input,.pawmedal textarea,.pawmedal select{font-family:"Open Sans",Arial,Helvetica,sans-serif}
+.pawmedal h1{font-size:clamp(39px,4.22vw,63px)}
+.pawmedal h2{font-size:clamp(28px,2.9vw,43px)}
+.pawmedal h3{font-size:20px}
+.pawmedal-eyebrow{font-size:10px!important}
+.pawmedal-button,.pawmedal-text-link,.pawmedal-text-button{font-size:12px}
+.pawmedal-review-nav a{font-size:12px}
+.pawmedal-review-nav{transform:translateX(-28px)}
+.pawmedal-review-nav a{font-weight:500}
+.pawmedal-review-header>a+nav{margin-left:100px}
+.pawmedal-review-nav a{font-weight:600}
+.pawmedal-hero .pawmedal-eyebrow{font-size:12px!important}
+.pawmedal-hero h1{font-size:clamp(53px,4.4vw,76px);max-width:760px}
+.pawmedal-hero .pawmedal-lead{font-size:18px;max-width:540px}
+.pawmedal-benefit h3{font-size:15px}
+.pawmedal-benefit p{font-size:14px}
+.pawmedal-missing-copy h2{font-size:27px}
+.pawmedal-missing-copy p{font-size:14px}
+.pawmedal-missing-stat h3{font-size:24px}
+.pawmedal-missing-stat p{font-size:16px}
+.pawmedal-card-copy h3{font-size:20px}
+.pawmedal-card-copy>p,.pawmedal-card-copy ul,.pawmedal-feature-list p,.pawmedal-steps p,.pawmedal-table,.pawmedal-faq>div{font-size:12px}
+.pawmedal-heading>p:last-child:not(:first-child),.pawmedal-lead,.pawmedal-reassurance p:not(.pawmedal-eyebrow){font-size:14px}
+.pawmedal-art-note{font-size:26px}
+.pawmedal-reassurance-art>p{font-size:29px!important}
+@media(max-width:1100px){
+  .pawmedal-hero h1{font-size:55px;max-width:650px}
+  .pawmedal-hero .pawmedal-lead{font-size:16px}
+  .pawmedal-benefit h3{font-size:12px}
+  .pawmedal-benefit p{font-size:11px}
+}
+@media(max-width:749px){
+  .pawmedal,.pawmedal-review-body{font-size:13px}
+  .pawmedal-review-nav{transform:none}
+  .pawmedal h1,.pawmedal-hero h1{font-size:42px;max-width:330px}
+  .pawmedal h2{font-size:31px}
+  .pawmedal h3{font-size:18px}
+  .pawmedal-hero .pawmedal-lead{font-size:14px}
+  .pawmedal-hero .pawmedal-eyebrow{font-size:10px!important}
+  .pawmedal-hero .pawmedal-button,.pawmedal-hero .pawmedal-text-link,.pawmedal-hero .pawmedal-text-button{font-size:11px}
+  .pawmedal-missing-copy h2{font-size:25px}
+  .pawmedal-missing-copy p{font-size:12px}
+  .pawmedal-missing-stat h3{font-size:23px}
+  .pawmedal-missing-stat p{font-size:14px}
+}
+
+/* Keep benefit labels compact: heading max two lines, description max two lines. */
+.pawmedal-benefit{min-width:0}
+.pawmedal-benefit>div{min-width:0}
+.pawmedal-benefit h3,.pawmedal-benefit p{display:inline;font-size:13px;font-weight:500;line-height:1.18;color:#111;letter-spacing:0;max-width:none;overflow:visible}
+.pawmedal-benefit h3:after{content:" "}
+.pawmedal-benefit>div{display:block;max-width:270px;line-height:1.18}
+.pawmedal-hero .pawmedal-art-note{color:#fff!important;text-shadow:0 3px 18px #000,0 1px 2px #000}
+.pawmedal-heading h2,.pawmedal-reassurance h2,.pawmedal-missing-copy h2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pawmedal-heading>p:last-child:not(:first-child),.pawmedal-reassurance p:not(.pawmedal-eyebrow),.pawmedal-missing-copy p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media(max-width:1100px){
+  .pawmedal-benefit h3,.pawmedal-benefit p{font-size:11px}
+  .pawmedal-benefit>div{max-width:150px}
+}
+@media(max-width:749px){
+  .pawmedal-benefit h3,.pawmedal-benefit p{font-size:10px}
+  .pawmedal-benefit>div{max-width:130px}
+}
+
+/* Product chooser follows the approved three-card wireframe. */
+.pawmedal .pawmedal-button{height:46.4px;min-height:46.4px}
+.pawmedal-hero .pawmedal-button{height:58px;min-height:58px}
+#shop.pawmedal{padding:16px 0 28px}
+#shop .pawmedal-wrap{width:min(1280px,calc(100% - 96px))}
+#shop .pawmedal-product-heading{max-width:none;margin:0 0 12px;text-align:center}
+#shop .pawmedal-product-heading h2{max-width:none;font-size:26px;line-height:1.05;letter-spacing:-.045em}
+#shop .pawmedal-product-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#shop .pawmedal-product-card{min-width:0;min-height:410px;padding:12px 22px 16px;border:1px solid #dedede;border-radius:8px;background:#fff;overflow:hidden}
+#shop .pawmedal-card-intro{text-align:center}
+#shop .pawmedal-card-intro h3{font-size:20px;line-height:1.05;letter-spacing:-.035em}
+#shop .pawmedal-card-intro p{margin-top:2px;color:#444;font-size:12px;font-weight:500;line-height:1.1;letter-spacing:.025em;text-transform:uppercase}
+#shop .pawmedal-card-image{position:relative;display:flex;align-items:center;justify-content:center;width:100%;height:188px;margin:0 auto 2px;background:transparent;overflow:visible}
+#shop .pawmedal-card-image>img{width:100%;height:100%;padding:0;object-fit:contain}
+#shop .pawmedal-card-image--bundle>img:first-child{position:absolute;left:20%;bottom:2px;width:43%;height:170px;padding:0;z-index:1}
+#shop .pawmedal-card-image--bundle .pawmedal-bundle-finder{position:absolute;right:20%;bottom:2px;width:39%;height:160px;border-radius:0;z-index:2}
+#shop .pawmedal-card-copy{display:flex;flex:1;flex-direction:column;padding:0}
+#shop .pawmedal-card-copy ul{display:block;width:max-content;max-width:100%;margin:2px auto 0;padding:0;list-style:none;font-size:13px;line-height:1.2}
+#shop .pawmedal-card-copy li{padding:2px 0;white-space:nowrap}
+#shop .pawmedal-card-copy li:before{content:'✓';display:inline-grid;place-items:center;width:13px;height:13px;margin-right:9px;border:1.4px solid #111;border-radius:50%;color:#111;font-size:9px;font-weight:700;line-height:1}
+#shop .pawmedal-price{margin:5px 0 7px;color:#111;text-align:center;font-size:22px;font-weight:700;line-height:1}
+#shop .pawmedal-card-copy .pawmedal-button{width:min(78%,290px);height:46.4px;min-height:46.4px;margin:auto auto 0;padding:0 22px;border-radius:999px;font-size:12px;line-height:1}
+#shop .pawmedal-card-copy .pawmedal-button span{font-size:18px;line-height:1}
+#shop .pawmedal-card-copy .pawmedal-button{border-color:#111;background:#111;color:#fff!important;box-shadow:none}
+#shop .pawmedal-card-copy .pawmedal-button:hover{border-color:#ccc;background:#fff;color:#111!important;box-shadow:0 3px 8px #00000018}
+@media(max-width:1100px){
+  #shop .pawmedal-wrap{width:calc(100% - 64px)}
+}
+@media(max-width:900px){
+  #shop .pawmedal-product-card{padding-inline:14px}
+  #shop .pawmedal-card-intro h3{font-size:18px}
+  #shop .pawmedal-card-intro p{font-size:10px}
+  #shop .pawmedal-card-image{height:154px}
+  #shop .pawmedal-card-image--bundle>img:first-child{height:142px}
+  #shop .pawmedal-card-image--bundle .pawmedal-bundle-finder{height:134px}
+  #shop .pawmedal-card-copy ul{font-size:11px}
+}
+@media(max-width:749px){
+  .pawmedal .pawmedal-button{height:40px;min-height:40px}
+  .pawmedal-hero .pawmedal-button{height:50px;min-height:50px}
+  #shop.pawmedal{padding:28px 0 38px}
+  #shop .pawmedal-wrap{width:calc(100% - 40px)}
+  #shop .pawmedal-product-heading{margin-bottom:18px}
+  #shop .pawmedal-product-heading h2{font-size:25px}
+  #shop .pawmedal-product-grid{grid-template-columns:1fr;gap:14px}
+  #shop .pawmedal-product-card{width:100%;max-width:440px;min-height:390px;margin:auto;padding:14px 24px 18px}
+  #shop .pawmedal-card-image{height:176px}
+  #shop .pawmedal-card-image--bundle>img:first-child{height:160px}
+  #shop .pawmedal-card-image--bundle .pawmedal-bundle-finder{height:150px}
+  #shop .pawmedal-card-copy ul{font-size:13px}
+  #shop .pawmedal-card-copy .pawmedal-button{height:40px;min-height:40px}
+}
+
+/* Digital profile follows the approved horizontal wireframe. */
+#how-it-works.pawmedal-profile-showcase{padding:24px 0 0;overflow:hidden;background:#fff}
+#how-it-works .pawmedal-profile-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(230px,.78fr) minmax(0,1fr);gap:30px;height:430px;align-items:stretch}
+#how-it-works .pawmedal-profile-copy{align-self:center;padding-top:0}
+#how-it-works .pawmedal-profile-copy h2{max-width:390px;font-size:38px;font-weight:800;line-height:.98;letter-spacing:-.045em}
+#how-it-works .pawmedal-profile-description{max-width:390px;margin-top:12px;color:#111;font-size:15px;line-height:1.22}
+#how-it-works .pawmedal-profile-facts{margin:17px 0 0;padding:0;list-style:none;color:#111;font-size:14px;line-height:1.15}
+#how-it-works .pawmedal-profile-facts li{display:flex;align-items:center;gap:9px;margin:5px 0}
+#how-it-works .pawmedal-profile-facts li>span{display:inline-grid;place-items:center;width:16px;height:16px;flex:0 0 16px;border:1.5px solid #111;border-radius:50%;font-size:10px;font-weight:700;line-height:1}
+#how-it-works .pawmedal-profile-visual{position:relative;display:flex;height:430px;align-items:flex-start;justify-content:center;overflow:visible}
+#how-it-works .pawmedal-profile-visual:before{content:"";position:absolute;left:50%;bottom:-250px;width:520px;height:520px;border-radius:50%;background:linear-gradient(180deg,#f1f1f1 0%,#f1f1f1 46%,rgba(241,241,241,0) 52%);clip-path:inset(0 0 250px 0);transform:translateX(-50%);z-index:0}
+#how-it-works .pawmedal-phone{position:relative;z-index:1;width:270px;margin-top:0;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible;transform:none}
+#how-it-works .pawmedal-phone img{width:100%;height:auto}
+#how-it-works .pawmedal-profile-aside{position:relative;height:430px}
+#how-it-works .pawmedal-profile-note{position:relative;height:235px;color:#111;transform:translate(12px,18px)}
+#how-it-works .pawmedal-profile-note p{position:absolute;top:0;left:8px;z-index:2;width:300px;color:#111;font-family:Georgia,serif;font-size:22px;font-weight:600;font-style:italic;line-height:1.1;white-space:nowrap;transform:rotate(-7deg)}
+#how-it-works .pawmedal-profile-note svg{position:absolute;top:60px;left:0;width:190px;height:105px;overflow:visible;fill:none;stroke:#111;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#how-it-works .pawmedal-profile-info-group{position:absolute;right:14px;bottom:44px;display:flex;width:min(100%,280px);align-items:center;flex-direction:column;gap:18px}
+#how-it-works .pawmedal-profile-info-paw{display:grid;width:116px;height:116px;place-items:center;border-radius:50%;background:#e4e4e4;color:#ababab;font-size:58px;line-height:1}
+#how-it-works .pawmedal-profile-info{display:flex;width:100%;min-height:88px;align-items:center;justify-content:center;padding:17px 22px;border-radius:9px;background:#f1f1f1;color:#111;text-align:center}
+#how-it-works .pawmedal-profile-info p{max-width:290px;color:#111;font-size:14px;font-weight:500;line-height:1.2}
+@media(max-width:1100px){
+  #how-it-works .pawmedal-profile-layout{grid-template-columns:minmax(0,1fr) 220px minmax(0,.9fr);gap:20px;height:400px}
+  #how-it-works .pawmedal-profile-copy h2{font-size:32px}
+  #how-it-works .pawmedal-profile-description{font-size:13px}
+  #how-it-works .pawmedal-profile-facts{font-size:12px}
+  #how-it-works .pawmedal-profile-visual,#how-it-works .pawmedal-profile-aside{height:400px}
+  #how-it-works .pawmedal-phone{width:251px}
+  #how-it-works .pawmedal-profile-note p{left:0;width:220px;font-size:18px}
+  #how-it-works .pawmedal-profile-note svg{width:150px}
+  #how-it-works .pawmedal-profile-info-group{width:min(100%,270px);gap:16px}
+  #how-it-works .pawmedal-profile-info-paw{width:100px;height:100px;font-size:50px}
+  #how-it-works .pawmedal-profile-info{min-height:80px;padding:14px 16px}
+  #how-it-works .pawmedal-profile-info p{font-size:12px}
+}
+@media(max-width:749px){
+  #how-it-works.pawmedal-profile-showcase{padding:38px 0 0}
+  #how-it-works .pawmedal-profile-layout{grid-template-columns:1fr;gap:24px;height:auto}
+  #how-it-works .pawmedal-profile-copy{padding:0}
+  #how-it-works .pawmedal-profile-copy h2{max-width:330px;font-size:31px}
+  #how-it-works .pawmedal-profile-description{max-width:350px;font-size:14px}
+  #how-it-works .pawmedal-profile-facts{font-size:13px}
+  #how-it-works .pawmedal-profile-visual{height:360px}
+  #how-it-works .pawmedal-profile-visual:before{bottom:-210px;width:430px;height:430px;clip-path:inset(0 0 210px 0)}
+  #how-it-works .pawmedal-phone{width:226px;margin-top:0}
+  #how-it-works .pawmedal-profile-aside{display:grid;height:auto;gap:12px}
+  #how-it-works .pawmedal-profile-note{height:180px}
+  #how-it-works .pawmedal-profile-note p{left:0;width:330px;font-size:20px}
+  #how-it-works .pawmedal-profile-note svg{left:8px}
+  #how-it-works .pawmedal-profile-info-group{position:relative;right:auto;bottom:auto;width:min(100%,280px);margin-inline:auto;gap:18px;transform:translate(-12px,-20px)}
+  #how-it-works .pawmedal-profile-info-paw{width:112px;height:112px;font-size:56px}
+  #how-it-works .pawmedal-profile-info{width:100%;min-height:104px;padding:18px}
+  #how-it-works .pawmedal-profile-info p{max-width:310px;font-size:13px}
+}
+
+/* Wireframe-matched lower homepage: Finder through FAQ only. */
+.pawmedal .fa-location-dot:before{content:"\f3c5"}
+.pawmedal .fa-bag-shopping:before{content:"\f290"}
+.pawmedal .fa-battery-full:before{content:"\f240"}
+.pawmedal .fa-shield-halved:before{content:"\f3ed"}
+.pawmedal .fa-droplet:before{content:"\f043"}
+.pawmedal .fa-feather:before{content:"\f52d"}
+.pawmedal .fa-star:before{content:"\f005"}
+.pawmedal .fa-shapes:before{content:"\f61f"}
+.pawmedal .fa-wand-magic-sparkles:before{content:"\f72b"}
+.pawmedal .fa-arrows-rotate:before{content:"\f021"}
+.pawmedal .fa-sliders:before{content:"\f1de"}
+.pawmedal .fa-bullseye:before{content:"\f140"}
+.pawmedal-visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+#finder,#construction,#comparison,#design-studio{padding:10px 0 0;background:#fff}
+#finder{padding-top:44px}
+.pawmedal-wire-panel{border:1px solid #dedede;border-radius:9px;background:linear-gradient(135deg,#fdfdfd,#f5f5f5);overflow:hidden}
+
+#finder .pawmedal-finder-panel{display:grid;grid-template-columns:78% calc(22% - 12px);gap:12px;min-height:230px}
+#finder .pawmedal-finder-panel{border:0;background:transparent;overflow:visible}
+#finder .pawmedal-finder-main{display:grid;grid-template-columns:53.846% 46.154%;min-width:0;border:1px solid #dedede;border-radius:9px;background:url("pawmedalfinder-map-bg.png") center/cover no-repeat;overflow:hidden}
+#finder .pawmedal-finder-copy{display:flex;position:relative;z-index:1;align-items:flex-start;flex-direction:column;justify-content:center;padding:22px 30px;border:0;border-radius:0;background:transparent}
+#finder .pawmedal-finder-copy h2{font-size:28px;font-weight:800;line-height:1;letter-spacing:-.045em}
+#finder .pawmedal-finder-copy h3{margin-top:3px;font-size:20px;font-weight:800;line-height:1.04;letter-spacing:-.035em}
+#finder .pawmedal-finder-copy p{max-width:470px;margin-top:11px;color:#111;font-size:13px;line-height:1.22}
+#finder .pawmedal-finder-copy .pawmedal-button{width:164px;margin-top:17px;padding:0 20px}
+#finder .pawmedal-finder-stage{position:relative;isolation:isolate;display:flex;min-height:230px;align-items:center;justify-content:center;border:0;border-radius:0;background:transparent;overflow:hidden}
+#finder .pawmedal-map-lines{position:absolute;inset:-45px;z-index:-1;transform:rotate(-18deg);opacity:.8;background:repeating-linear-gradient(0deg,transparent 0 54px,#fff 56px 64px,transparent 66px 116px),repeating-linear-gradient(90deg,transparent 0 76px,#fff 78px 86px,transparent 88px 158px)}
+#finder .pawmedal-finder-stage>img{position:relative;z-index:1;width:190px;height:205px;max-height:none;border-radius:0;object-fit:contain;transform:translateX(-24px)}
+#finder .pawmedal-location-card{position:absolute;top:53px;right:22px;z-index:2;display:flex;width:112px;min-height:78px;align-items:flex-start;gap:9px;padding:12px;border-radius:7px;background:#fff;box-shadow:0 7px 22px #00000012;color:#111}
+#finder .pawmedal-location-card>i{font-size:25px}
+#finder .pawmedal-location-card span{display:block;font-size:12px;line-height:1.05}
+#finder .pawmedal-location-card strong{display:block;font-size:13px}
+#finder .pawmedal-location-card small{display:block;margin-top:3px;font-size:10px;line-height:1.05}
+#finder .pawmedal-finder-specs{display:flex;width:100%;margin-left:0;flex-direction:column;justify-content:center;border:1px solid #dedede;border-radius:9px;background:#fafafa;padding:12px 20px}
+#finder .pawmedal-finder-specs>div{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;padding:8px 0}
+#finder .pawmedal-spec-icon{display:grid;width:27px;height:27px;place-items:center;border:1.5px solid #111;border-radius:5px;color:#111;font-size:14px}
+#finder .pawmedal-finder-specs p{color:#111;font-size:12px;font-weight:600;line-height:1.15}
+#finder .pawmedal-finder-specs p span{font-weight:400}
+
+#construction .pawmedal-construction-panel{display:grid;grid-template-columns:78% calc(22% - 12px);gap:12px;min-height:252px;background:#fff}
+#construction .pawmedal-construction-panel{border:0;background:transparent;overflow:visible}
+#construction .pawmedal-construction-main{display:grid;grid-template-columns:48% 52%;min-width:0;border:1px solid #dedede;border-radius:9px;background:linear-gradient(90deg,#fff 0%,#fff 32%,#f8f8f8 72%,#f3f3f3 100%);overflow:hidden}
+#construction .pawmedal-construction-copy{display:flex;align-items:flex-start;flex-direction:column;justify-content:center;padding:24px 30px;border:0;border-radius:0;background:transparent}
+#construction .pawmedal-construction-copy h2{font-size:28px;font-weight:800;line-height:1;letter-spacing:-.045em}
+#construction .pawmedal-construction-copy h3{margin-top:3px;font-size:20px;font-weight:800;line-height:1.04;letter-spacing:-.035em}
+#construction .pawmedal-construction-copy p{max-width:470px;margin-top:11px;color:#111;font-size:13px;line-height:1.22}
+#construction .pawmedal-construction-copy .pawmedal-button{width:164px;margin-top:17px;padding:0 20px}
+#construction .pawmedal-construction-visual{display:block;border:0;border-radius:0;background:transparent;padding:0 8px 0 0;overflow:hidden}
+#construction .pawmedal-construction-visual>img{display:block;width:100%;height:260px;object-fit:contain;object-position:center;transform:scale(1.2);transform-origin:left center}
+#construction .pawmedal-materials{display:flex;flex-direction:column;justify-content:center;gap:18px}
+#construction .pawmedal-materials>div{position:relative;color:#111;font-size:11px;line-height:1.14}
+#construction .pawmedal-materials>div:before{content:"";position:absolute;right:calc(100% + 8px);top:7px;width:34px;border-top:1px solid #999}
+#construction .pawmedal-materials strong,#construction .pawmedal-materials span{display:block}
+#construction .pawmedal-materials strong{font-weight:500}
+#construction .pawmedal-materials span{margin-top:2px;color:#555;font-size:10px}
+#construction .pawmedal-construction-benefits{display:flex;width:100%;margin-left:0;flex-direction:column;justify-content:center;border:1px solid #dedede;border-radius:9px;background:#fafafa;padding:12px 18px}
+#construction .pawmedal-construction-benefits>div{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:center;padding:7px 0;color:#111;font-size:12px;line-height:1.15}
+#construction .pawmedal-construction-benefits i{font-size:18px;text-align:center}
+
+#comparison .pawmedal-comparison-panel{position:relative;display:block;min-height:0;background:#fff}
+#comparison .pawmedal-comparison-panel{width:min(1752px,calc(100% - 96px));max-width:none}
+#comparison .pawmedal-comparison-copy{padding:0;text-align:left}
+#comparison .pawmedal-comparison-copy h2{max-width:none;font-size:clamp(24px,1.9vw,36px);font-weight:800;line-height:1.08;letter-spacing:-.045em}
+#comparison .pawmedal-comparison-copy>p:not(.pawmedal-comparison-note){margin-top:4px;color:#111;font-size:clamp(13px,1.15vw,22px);font-weight:400;line-height:1.12;letter-spacing:-.01em;white-space:nowrap}
+#comparison .pawmedal-comparison-note{position:absolute;left:clamp(30px,2.5vw,48px);bottom:clamp(132px,9.65vw,185px);z-index:2;color:#111;font-family:Georgia,serif;font-size:clamp(22px,1.98vw,38px);font-weight:600;font-style:italic;line-height:1.08;white-space:nowrap;transform:rotate(-8deg)}
+#comparison .pawmedal-table-scroll{width:100%;overflow-x:auto;border:0}
+#comparison .pawmedal-table{width:100%;min-width:1080px;border-collapse:collapse;table-layout:fixed;color:#111;text-align:center}
+#comparison .pawmedal-table caption{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0)}
+#comparison .pawmedal-table th,#comparison .pawmedal-table td{width:auto;height:clamp(28px,2.1vw,40px);padding:4px 10px;border:0;color:#111;font-size:clamp(12px,.94vw,18px);line-height:1.08;vertical-align:middle}
+#comparison .pawmedal-table thead th{height:clamp(122px,8.75vw,168px);padding:18px 12px 8px;background:#fff;font-weight:600;vertical-align:top}
+#comparison .pawmedal-table thead th:first-child{width:48.65%;padding:16px clamp(20px,2vw,38px);border-left:0}
+#comparison .pawmedal-table thead th:nth-child(2){width:18.4%}
+#comparison .pawmedal-table thead th:nth-child(3){width:16.45%}
+#comparison .pawmedal-table thead th:nth-child(4){width:16.5%}
+#comparison .pawmedal-table thead th:nth-child(n+2),#comparison .pawmedal-table tbody td{border-left:1px solid #d7d7d7}
+#comparison .pawmedal-table thead strong{display:block;margin-bottom:8px;font-size:clamp(13px,1.15vw,22px);font-weight:700;line-height:1}
+#comparison .pawmedal-table thead img{width:clamp(65px,5vw,96px);height:clamp(72px,5.2vw,100px);margin:auto;object-fit:contain}
+#comparison .pawmedal-table tbody tr:nth-child(odd){--comparison-row:#f3f3f3}
+#comparison .pawmedal-table tbody tr:nth-child(even){--comparison-row:#f8f8f8}
+#comparison .pawmedal-table tbody th{position:relative;padding:0;background:linear-gradient(90deg,#fff 0 51.45%,#d7d7d7 51.45% calc(51.45% + 1px),var(--comparison-row) calc(51.45% + 1px) 100%);font-weight:400;text-align:left;white-space:nowrap}
+#comparison .pawmedal-table tbody th:after{content:"";position:absolute;right:0;bottom:0;left:51.45%;border-bottom:1px solid #ddd}
+#comparison .pawmedal-table tbody td{border-bottom:1px solid #ddd;background:var(--comparison-row);font-size:clamp(16px,1.35vw,26px);font-weight:500}
+#comparison .pawmedal-row-content{display:flex;width:48.55%;height:100%;margin-left:51.45%;align-items:center;padding-left:clamp(16px,1.3vw,25px)}
+#comparison .pawmedal-row-icon{display:inline-block;width:clamp(20px,1.45vw,28px);margin-right:7px;color:#111;font-size:clamp(13px,1vw,19px);font-weight:700;text-align:center}
+
+#design-studio .pawmedal-design-panel{position:relative;display:flex;min-height:370px;flex-direction:column;justify-content:space-between;padding:28px 30px 24px;background:linear-gradient(135deg,#fafafa,#f3f3f3)}
+#design-studio .pawmedal-design-heading{display:grid;grid-template-columns:minmax(0,1fr) 185px 280px;min-height:160px;align-items:center;gap:24px}
+#design-studio .pawmedal-design-heading h2{max-width:650px;font-size:31px;font-weight:800;line-height:.96;letter-spacing:-.045em}
+#design-studio .pawmedal-design-heading>div:first-child>p{max-width:680px;margin-top:8px;color:#111;font-size:12px;line-height:1.2}
+#design-studio .pawmedal-design-note{position:relative;align-self:start;margin-top:9px;color:#111;font-family:Georgia,serif;font-size:16px;font-weight:600;font-style:italic;line-height:1.15;text-align:center;transform:rotate(-7deg)}
+#design-studio .pawmedal-design-note svg{display:block;width:34px;height:28px;margin:-2px 0 0 auto;overflow:visible;fill:none;stroke:#111;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+@media(min-width:1101px){#design-studio .pawmedal-design-note{transform:translateX(50px) rotate(-7deg)}}
+#design-studio .pawmedal-design-product{position:absolute;top:25px;right:30px;width:280px;height:285px}
+#design-studio .pawmedal-design-product img{position:absolute;top:0;right:0;width:270px;height:300px;object-fit:contain;filter:drop-shadow(0 7px 7px #0002)}
+#design-studio .pawmedal-prompt{display:grid;width:70%;height:46px;grid-template-columns:38px minmax(0,1fr) 200px;align-items:center;border:1px solid #bfbfbf;border-radius:100px;background:#fff;overflow:hidden;color:#111;transform:translateY(-30px)}
+#design-studio .pawmedal-prompt>i{font-size:17px;text-align:center}
+#design-studio .pawmedal-prompt>span{padding:0 12px;border-left:1px solid #ddd;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#design-studio .pawmedal-prompt .pawmedal-button{width:100%;height:46px;min-height:46px;padding:0 24px;border-radius:100px;margin:0}
+#design-studio .pawmedal-design-benefits{display:grid;width:75%;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:0;transform:translateY(-20px)}
+#design-studio .pawmedal-design-benefits>div{display:grid;grid-template-columns:42px 1fr;gap:10px;align-items:center;min-width:0;color:#111}
+#design-studio .pawmedal-design-benefits>div>span{display:grid;width:42px;height:42px;place-items:center;border:1.5px solid #111;border-radius:50%;font-size:17px}
+#design-studio .pawmedal-design-benefits p{color:#111;font-size:11px;line-height:1.18}
+
+#about{padding:14px 0 0;background:#fff}
+#about .pawmedal-reassurance{position:relative;isolation:isolate;display:grid;grid-template-columns:55% 30% 15%;min-height:max(164.5px,21.399vw);gap:0;padding:0;border-radius:0;background:#f5f5f5}
+#about .pawmedal-reassurance-image{position:absolute;inset:0;z-index:-1;height:100%;overflow:hidden}
+#about .pawmedal-reassurance-image img{width:100%;height:100%;object-fit:cover;object-position:center;filter:none}
+#about .pawmedal-reassurance-copy{grid-column:2}
+#about .pawmedal-reassurance-copy{display:flex;align-items:flex-start;flex-direction:column;justify-content:center;padding:28px 45px}
+#about .pawmedal-reassurance-copy h2{max-width:430px;font-size:34px;font-weight:800;line-height:.96;letter-spacing:-.045em}
+#about .pawmedal-reassurance-copy p{max-width:430px;margin:9px 0 14px;color:#111;font-size:12px;line-height:1.2}
+#about .pawmedal-reassurance-copy .pawmedal-button{width:170px;gap:8px;padding:0 16px;overflow:hidden}
+#about .pawmedal-reassurance-copy .pawmedal-button span{flex:0 0 auto;margin-left:auto;font-size:16px}
+#about .pawmedal-reassurance-note{display:flex;align-items:center;justify-content:center;flex-direction:column;color:#111}
+#about .pawmedal-reassurance-note p{display:block;margin:0!important;color:#111!important;font-family:Georgia,serif;font-size:19px!important;font-weight:600;font-style:italic;line-height:1.02;text-align:center;overflow:visible;-webkit-line-clamp:unset;transform:rotate(-7deg)}
+#about .pawmedal-reassurance-note i{margin-top:10px;font-size:24px}
+
+#faq{padding:26px 0 46px;background:#fff}
+#faq .pawmedal-faq-grid{display:grid;grid-template-columns:44.515625% minmax(0,1fr);gap:0}
+#faq .pawmedal-faq-intro h2{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.045em}
+#faq .pawmedal-faq-intro>p{margin-top:7px;color:#111;font-size:12px;line-height:1.2}
+#faq .pawmedal-faq-contact{display:flex;align-items:center;justify-content:center;gap:28px;margin-top:37px;transform:translateY(15px)}
+#faq .pawmedal-faq-paw{display:grid;width:96px;height:96px;flex:0 0 96px;place-items:center;border-radius:50%;background:#ededed;color:#bababa;font-size:47px}
+#faq .pawmedal-faq-contact>div>p{margin:0 0 12px;color:#111;font-family:Georgia,serif;font-size:16px;font-weight:600;font-style:italic;line-height:1.12;text-align:center;transform:translateY(-15px) rotate(-7deg)}
+#faq .pawmedal-faq-contact .pawmedal-button{width:154px;padding:0 18px}
+@media(min-width:750px){
+  #faq .pawmedal-faq-contact{align-items:flex-end;justify-content:flex-start;gap:62px;margin:44px 0 0 32px;transform:none}
+  #faq .pawmedal-faq-paw{width:124px;height:124px;flex-basis:124px;font-size:62px}
+  #faq .pawmedal-faq-contact>div{display:flex;width:184px;flex:0 0 184px;flex-direction:column;align-items:center}
+  #faq .pawmedal-faq-contact>div>p{width:184px;margin:0 0 32px;font-size:18px;line-height:1.08;white-space:nowrap;transform:rotate(-7deg)}
+}
+#finder .pawmedal-button,#construction .pawmedal-button,#design-studio .pawmedal-button,#about .pawmedal-button,#faq .pawmedal-button{white-space:nowrap}
+#faq .pawmedal-faq-list{border:1px solid #d9d9d9;border-radius:7px;overflow:hidden}
+#faq .pawmedal-faq{border:0;border-top:1px solid #e2e2e2}
+#faq .pawmedal-faq:first-child{border-top:0}
+#faq .pawmedal-faq:last-child{border-bottom:0}
+#faq .pawmedal-faq summary{min-height:34px;padding:0 17px;color:#111;font-size:12px;font-weight:500;line-height:1.15}
+#faq .pawmedal-faq summary span{font-size:17px}
+#faq .pawmedal-faq>div{padding:0 42px 15px 17px;color:#555;font-size:11px;line-height:1.35}
+
+@media(max-width:1100px){
+  #finder .pawmedal-finder-panel{grid-template-columns:75% calc(25% - 12px)}
+  #finder .pawmedal-finder-main{grid-template-columns:53.333% 46.667%}
+  #finder .pawmedal-finder-copy,#construction .pawmedal-construction-copy{padding-inline:22px}
+  #finder .pawmedal-finder-copy h2,#construction .pawmedal-construction-copy h2{font-size:25px}
+  #finder .pawmedal-finder-copy h3,#construction .pawmedal-construction-copy h3{font-size:18px}
+  #finder .pawmedal-finder-stage>img{width:165px;transform:translateX(-18px)}
+  #finder .pawmedal-location-card{right:12px;width:102px}
+  #finder .pawmedal-finder-specs{padding-inline:13px}
+  #construction .pawmedal-construction-panel{grid-template-columns:75% calc(25% - 12px)}
+  #construction .pawmedal-construction-main{grid-template-columns:50% 50%}
+  #construction .pawmedal-construction-visual{display:block;padding:0}
+  #construction .pawmedal-construction-visual>img{height:205px}
+  #comparison .pawmedal-comparison-copy h2{font-size:clamp(24px,2.35vw,30px)}
+  #design-studio .pawmedal-design-heading{grid-template-columns:minmax(0,1fr) 160px 190px}
+  #design-studio .pawmedal-design-heading h2{font-size:28px}
+  #design-studio .pawmedal-design-product{width:190px;height:150px}
+  #design-studio .pawmedal-design-product img{width:180px;height:205px}
+  #design-studio .pawmedal-prompt{width:75%}
+  #design-studio .pawmedal-design-benefits{width:100%;gap:16px}
+  #design-studio .pawmedal-design-benefits p{font-size:10px}
+  #about .pawmedal-reassurance-copy{padding-inline:28px}
+  #about .pawmedal-reassurance-copy h2{font-size:30px}
+  #faq .pawmedal-faq-grid{grid-template-columns:calc(42vw - 4px) minmax(0,1fr);gap:0}
+  #faq .pawmedal-faq-contact{gap:18px;margin-left:0}
+  #faq .pawmedal-faq-paw{width:100px;height:100px;flex-basis:100px;font-size:50px}
+}
+
+@media(max-width:749px){
+  #finder,#construction,#comparison,#design-studio{padding-top:12px}
+  #finder{padding-top:36px}
+  .pawmedal-wire-panel{border-radius:8px}
+  #finder .pawmedal-finder-panel{grid-template-columns:1fr}
+  #finder .pawmedal-finder-panel{gap:0}
+  #finder .pawmedal-finder-main{grid-template-columns:1fr;background-position:center;background-size:cover}
+  #finder .pawmedal-finder-copy{padding:24px;border:0;border-radius:0}
+  #finder .pawmedal-finder-copy h2{font-size:27px}
+  #finder .pawmedal-finder-copy h3{font-size:19px}
+  #finder .pawmedal-finder-copy p{font-size:13px}
+  #finder .pawmedal-finder-stage{min-height:260px;border:0;border-radius:0}
+  #finder .pawmedal-finder-stage>img{width:190px;height:220px;transform:translateX(-18px)}
+  #finder .pawmedal-location-card{top:62px;right:24px}
+  #finder .pawmedal-finder-specs{display:grid;width:100%;margin-top:12px;margin-left:0;grid-template-columns:1fr 1fr;border:1px solid #dedede;border-radius:9px;padding:12px 20px}
+  #finder .pawmedal-finder-specs>div{padding:10px 4px}
+  #construction .pawmedal-construction-panel{grid-template-columns:1fr;gap:0}
+  #construction .pawmedal-construction-main{grid-template-columns:1fr;background:linear-gradient(180deg,#fff 0%,#fff 35%,#f8f8f8 72%,#f3f3f3 100%)}
+  #construction .pawmedal-construction-copy{padding:24px;border:0;border-radius:0}
+  #construction .pawmedal-construction-copy h2{font-size:27px}
+  #construction .pawmedal-construction-copy h3{font-size:19px}
+  #construction .pawmedal-construction-copy p{font-size:13px}
+  #construction .pawmedal-construction-visual{display:block;min-height:260px;padding:0;border:0;border-radius:0}
+  #construction .pawmedal-construction-visual>img{height:240px}
+  #construction .pawmedal-materials{gap:17px}
+  #construction .pawmedal-materials>div{font-size:10px}
+  #construction .pawmedal-materials>div:before{width:20px}
+  #construction .pawmedal-construction-benefits{display:grid;width:100%;margin-top:12px;margin-left:0;grid-template-columns:1fr 1fr;border:1px solid #dedede;border-radius:9px;padding:14px 18px}
+  #construction .pawmedal-construction-benefits>div{font-size:11px}
+  #comparison .pawmedal-table-scroll{width:100%}
+  #comparison .pawmedal-comparison-panel{width:calc(100% - 40px)}
+  #comparison .pawmedal-table{min-width:1080px}
+  #design-studio .pawmedal-design-panel{display:block;min-height:0;padding:22px 18px 16px}
+  #design-studio .pawmedal-design-heading{display:block;min-height:158px}
+  #design-studio .pawmedal-design-heading h2{max-width:none;font-size:17.5px;line-height:.98}
+  #design-studio .pawmedal-design-heading>div:first-child>p{display:-webkit-box;max-width:235px;margin-top:7px;font-size:9.5px;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+  #design-studio .pawmedal-design-note{position:absolute;top:93px;right:104px;font-size:11px}
+  #design-studio .pawmedal-design-product{position:absolute;top:62px;right:15px;width:95px;height:108px}
+  #design-studio .pawmedal-design-product img{right:-4px;bottom:0;width:100px;height:145px}
+  #design-studio .pawmedal-prompt{width:100%;grid-template-columns:34px minmax(0,1fr) 112px;height:40px;transform:none}
+  #design-studio .pawmedal-prompt>span{padding-inline:8px;font-size:10px}
+  #design-studio .pawmedal-prompt .pawmedal-button{height:40px;min-height:40px;padding:0 14px;font-size:11px}
+  #design-studio .pawmedal-design-benefits{width:100%;grid-template-columns:1fr 1fr;gap:14px 10px;margin-top:16px;transform:none}
+  #design-studio .pawmedal-design-benefits>div{grid-template-columns:36px 1fr;gap:8px}
+  #design-studio .pawmedal-design-benefits>div>span{width:36px;height:36px;font-size:14px}
+  #design-studio .pawmedal-design-benefits p{font-size:9px}
+  #about{padding-top:12px}
+  #about .pawmedal-reassurance{grid-template-columns:1fr;min-height:0}
+  #about .pawmedal-reassurance-image{position:relative;inset:auto;height:161px;grid-column:1;z-index:0}
+  #about .pawmedal-reassurance-copy{grid-column:1}
+  #about .pawmedal-reassurance-copy{padding:26px 20px}
+  #about .pawmedal-reassurance-copy h2{font-size:30px}
+  #about .pawmedal-reassurance-copy p{font-size:12px}
+  #about .pawmedal-reassurance-note{padding:8px 0 26px}
+  #faq{padding:28px 0 38px}
+  #faq .pawmedal-faq-grid{grid-template-columns:1fr;gap:25px}
+  #faq .pawmedal-faq-intro h2{font-size:28px}
+  #faq .pawmedal-faq-contact{justify-content:flex-start;margin-top:28px}
+  #faq .pawmedal-faq-paw{width:82px;height:82px;flex-basis:82px;font-size:39px}
+  #faq .pawmedal-faq summary{min-height:44px;font-size:11px}
+}
+/* Official Google Material Symbols, scoped to the lower homepage. */
+.pawmedal .pawmedal-symbol{display:inline-block;width:1em;height:1em;flex-shrink:0;fill:currentColor;stroke:none;vertical-align:middle}
+#shop .pawmedal-card-copy li:before{content:none}
+#shop .pawmedal-card-copy li>.pawmedal-symbol{width:15px;height:15px;margin-right:9px}
+#how-it-works .pawmedal-profile-facts li>span{border:0;font-size:18px}
+#how-it-works .pawmedal-profile-info-paw>.pawmedal-symbol,#faq .pawmedal-faq-paw>.pawmedal-symbol{width:1em;height:1em}
+#finder .pawmedal-location-card>.pawmedal-symbol{width:25px;height:25px}
+#finder .pawmedal-spec-icon{border:0;font-size:26px}
+#construction .pawmedal-construction-benefits>div>.pawmedal-symbol{width:22px;height:22px;justify-self:center}
+#comparison .pawmedal-row-icon>.pawmedal-symbol{width:1em;height:1em}
+#comparison .pawmedal-table td>.pawmedal-symbol{width:1em;height:1em}
+#design-studio .pawmedal-prompt>.pawmedal-symbol{width:20px;height:20px;justify-self:center}
+#about .pawmedal-reassurance-note>.pawmedal-symbol{margin-top:10px;width:24px;height:24px}
+#shop .pawmedal-button .pawmedal-symbol,#finder .pawmedal-button .pawmedal-symbol,#construction .pawmedal-button .pawmedal-symbol,#design-studio .pawmedal-button .pawmedal-symbol,#about .pawmedal-button .pawmedal-symbol,#faq .pawmedal-button .pawmedal-symbol{width:18px;height:18px}
+#faq .pawmedal-faq summary .pawmedal-symbol{width:17px;height:17px}
+#how-it-works .pawmedal-google-note-arrow{position:absolute;top:60px;left:25px;font-size:90px;line-height:1}
+#how-it-works .pawmedal-profile-note .pawmedal-google-note-arrow svg{position:static;width:1em;height:1em;fill:currentColor;stroke:none}
+#design-studio .pawmedal-google-note-arrow{display:block;text-align:right;font-size:30px;line-height:1}
+#design-studio .pawmedal-design-note .pawmedal-google-note-arrow svg{width:1em;height:1em;margin:0;fill:currentColor;stroke:none}
+#design-studio .pawmedal-design-note .pawmedal-google-note-arrow svg{display:inline-block}
+
+/* Keep icon/text pairs optically centered and restore the hand-drawn callouts. */
+#finder .pawmedal-finder-specs>div{align-items:center}
+#finder .pawmedal-location-card{align-items:center}
+#shop .pawmedal-card-copy li{display:flex;align-items:center}
+#comparison .pawmedal-row-content{align-items:center}
+#comparison .pawmedal-row-icon{display:inline-flex;align-items:center;justify-content:center}
+#about .pawmedal-reassurance-note>.pawmedal-symbol{display:block}
+#reconnection .pawmedal-stat-icon>.pawmedal-symbol{width:36px;height:36px}
+#how-it-works .pawmedal-profile-note .pawmedal-hand-arrow{position:absolute;top:60px;left:0;width:190px;height:105px;overflow:visible;fill:none;stroke:#111;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#design-studio .pawmedal-design-note .pawmedal-hand-arrow{display:block;width:34px;height:28px;margin:-2px 0 0 auto;overflow:visible;fill:none;stroke:#111;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.pawmedal-review-footer .pawmedal-review-logo{width:200px}
+.pawmedal-review-footer .pawmedal-footer-bottom{justify-content:center;text-align:center}
+@media(max-width:749px){.pawmedal-review-footer .pawmedal-review-logo{width:186px}}
