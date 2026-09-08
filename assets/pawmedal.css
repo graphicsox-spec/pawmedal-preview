@@ -354,14 +354,13 @@ a {
 .pm-hero-section.pm-hero-fullbleed {
   position: relative;
   width: 100%;
-  height: clamp(560px, 78vh, 880px);
-  min-height: 560px;
+  aspect-ratio: 1920 / 900;
+  min-height: clamp(580px, 48vw, 820px);
   max-height: 900px;
-  aspect-ratio: auto;
-  overflow: hidden;
-  background-color: #FAF7F2;
   display: flex;
   align-items: center;
+  overflow: hidden;
+  background-color: var(--pm-cream);
 }
 
 .pm-hero-bg-media {
@@ -369,23 +368,17 @@ a {
   inset: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  pointer-events: none;
   z-index: 1;
+  pointer-events: none;
 }
 
 .pm-hero-bg-img,
 .pm-hero-bg-video {
+  width: 100%;
   height: 100%;
-  width: auto;
-  max-width: none;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: 76% 56%;
   display: block;
-  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.85) 12%, black 24%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.85) 12%, black 24%);
 }
 
 .pm-hero-container {
@@ -571,7 +564,7 @@ a {
 /* Tag 1: Works with Apple (Top Right in forest/mountain background) */
 .pm-chip-apple {
   top: 14%;
-  right: clamp(16px, 3.2vw, 48px);
+  right: clamp(14px, 3vw, 46px);
   left: auto;
   animation: pmFloat 5s ease-in-out infinite;
 }
@@ -579,8 +572,7 @@ a {
 /* Tag 2: Unique Pet Profile (Top Left in clear mountain sky) */
 .pm-chip-profile {
   top: 14%;
-  right: calc((clamp(560px, 78vh, 880px) * 16 / 9) * (1 - 0.46));
-  left: auto;
+  left: clamp(45%, 48vw, 52%);
   animation: pmFloat 5s ease-in-out infinite;
   animation-delay: 1.8s;
 }
@@ -588,8 +580,7 @@ a {
 /* Tag 3: NFC & QR Tap (Mid Left in open meadow background) */
 .pm-chip-nfc {
   top: 50%;
-  right: calc((clamp(560px, 78vh, 880px) * 16 / 9) * (1 - 0.45));
-  left: auto;
+  left: clamp(45%, 47vw, 51%);
   animation: pmFloat 5s ease-in-out infinite;
   animation-delay: 2.8s;
 }
@@ -597,7 +588,7 @@ a {
 /* Tag 4: Light & Waterproof (Mid Right in pine forest background) */
 .pm-chip-waterproof {
   top: 50%;
-  right: clamp(16px, 2.5vw, 42px);
+  right: clamp(14px, 2.5vw, 40px);
   left: auto;
   animation: pmFloat 5s ease-in-out infinite;
   animation-delay: 3.8s;
@@ -606,11 +597,10 @@ a {
 /* Live Collar Beacon: Exactly below circular medal and centered */
 .pm-hero-collar-beacon {
   position: absolute;
-  right: calc((clamp(560px, 78vh, 880px) * 16 / 9) * (1 - 0.726));
-  bottom: 12px;
+  left: 72.8%;
+  bottom: clamp(10px, 1.8vw, 20px);
   top: auto;
-  left: auto;
-  transform: translateX(50%);
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2275,8 +2265,11 @@ a {
 /* Laptop screens (1025px - 1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
   .pm-hero-section.pm-hero-fullbleed {
-    height: clamp(540px, 74vh, 700px);
-    min-height: 540px;
+    min-height: clamp(560px, 46vw, 680px);
+  }
+  .pm-hero-bg-video,
+  .pm-hero-bg-img {
+    object-position: 78% 58%;
   }
   .pm-hero-title {
     font-size: clamp(36px, 4vw, 52px);
@@ -2285,22 +2278,20 @@ a {
     font-size: 16px;
   }
   .pm-hero-collar-beacon {
-    right: calc((clamp(540px, 74vh, 700px) * 16 / 9) * (1 - 0.726));
-    bottom: 10px;
-  }
-  .pm-chip-profile {
-    right: calc((clamp(540px, 74vh, 700px) * 16 / 9) * (1 - 0.46));
-  }
-  .pm-chip-nfc {
-    right: calc((clamp(540px, 74vh, 700px) * 16 / 9) * (1 - 0.45));
+    left: 73%;
+    bottom: 12px;
   }
 }
 
 /* Small Laptops & Tablets Landscape (881px - 1024px) */
 @media (min-width: 881px) and (max-width: 1024px) {
   .pm-hero-section.pm-hero-fullbleed {
-    height: 540px;
-    min-height: 540px;
+    min-height: 560px;
+    aspect-ratio: auto;
+  }
+  .pm-hero-bg-video,
+  .pm-hero-bg-img {
+    object-position: 80% 55%;
   }
   .pm-hero-grid {
     grid-template-columns: 1.15fr 0.85fr;
